@@ -3,11 +3,10 @@
 
 
 @{
-    foreach(PizzaModel pizza in Model)
-    {
+    
 
         <html>
-        <body class="bg-dark">
+        <body class="bg-dark bg-navbar">
             <main>
                 <div class="container mt-5 text-white">
                     <div class="row">
@@ -31,6 +30,9 @@
                                         <th scope="col">Prezzo</th>
                                     </tr>
                                 </thead>
+                            @foreach(PizzaModel pizza in Model)
+                            {
+                                
                                 <tbody class="table-group-divider">
                                     <tr>
                                         <th scope="row">1</th>
@@ -55,10 +57,11 @@
                                         <td>4,50</td>
                                     </tr>
                                 </tbody>
-                            </table>
+                             }
+                                </table>
 
                         </div>
-                        }
+                       
                     </div>
                 </div>
             </main>
