@@ -1,0 +1,70 @@
+﻿@model List<PizzaModel>;
+
+
+
+@{
+    foreach(PizzaModel pizza in Model)
+    {
+
+        <html>
+        <body class="bg-dark">
+            <main>
+                <div class="container mt-5 text-white">
+                    <div class="row">
+
+
+
+                        <div class="col-12">
+                            <h3>MENU' DELLE PIZZE</h3>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-12">
+
+                            <table class="table text-white ">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Nome</th>
+                                        <th scope="col">Ingredienti</th>
+                                        <th scope="col">Immagine</th>
+                                        <th scope="col">Prezzo</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Margherita</td>
+                                        <td>Pomodoro, mozzarella, basilico</td>
+                                        <td><img src="/img/margherita.jpeg" class="img-fluid img-size" alt="MargheritaS"></td>
+                                        <td>5,00</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Diavola</td>
+                                        <td>Pomodoro, mozzarella, salame piccante, basilico</td>
+                                        <td><img src="/img/diavola.jpeg" class="img-fluid img-size" alt="Diavola"></td>
+                                        <td>8,00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Greca</td>
+                                        <td>Pomodoro,olive, basilico</td>
+                                        <td><img src="/img/greca.jpeg" class="img-fluid img-size" alt="Greca"></td>
+                                        <td>4,50</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        }
+                    </div>
+                </div>
+            </main>
+
+        </body>
+        </html>
+       
+    }
+}
