@@ -1,20 +1,37 @@
-﻿using System.ComponentModel.DataAnnotations;
-
+﻿using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LaMiaPizzeria.Models
 {
-    [Key]
-    public class menu
+    
+    public class PizzaModel
     {
+        [Key]
         public int Id { get; set; }
+        
+        [MaxLength(100)]
         public string Name { get; set; }
-        public string ingredienti { get; set; }
+        
+        [Column(TypeName = "text")]
+        public string Description { get; set; }
+        
+        [MaxLength(300)]
+        public string Immagine { get; set; }
 
-        public string immagine { get; set; }
 
-        public float prezzo { get; set; }
+        public float Prezzo { get; set; }
 
 
-        public menu
+        public PizzaModel(string name, string description, string immagine, float prezzo)
+        {
+            Name = name;
+
+            Description = description;
+
+            Immagine = immagine;
+
+            Prezzo = prezzo;
+        }
     }
 }
