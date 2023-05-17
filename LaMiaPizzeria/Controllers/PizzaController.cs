@@ -6,7 +6,7 @@ namespace LaMiaPizzeria.Controllers
 {
     public class PizzaController : Controller
     {
-        public IActionResult NewIndex()
+        public IActionResult Index()
         {
             using (PizzaContext db = new PizzaContext())
             {
