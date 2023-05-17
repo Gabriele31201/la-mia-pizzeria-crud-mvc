@@ -1,0 +1,45 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.fs_large{
+    font-size: 40px;
+}
+
+.bg-navbar{
+    background-color: mediumpurple;
+    
+    
+}
+
+.navbar {
+    padding-bottom: 0;
+    padding-top: 0
+}
+
+.img-size{
+    width: 200px;
+    height: 156px;
+    
+}
+
+.bg-footer {
+    background-color:  rgb(0, 0, 0, 0,50)
+}
+
+
