@@ -4,7 +4,7 @@ using LaMiaPizzeria.Models;
 
 namespace LaMiaPizzeria.Controllers
 {
-    public class PizzaController1 : Controller
+    public class PizzaController : Controller
     {
         public IActionResult NewIndex()
         {
