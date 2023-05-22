@@ -30,6 +30,14 @@ namespace LaMiaPizzeria.Controllers
             return View("Contacts");
         }
 
+        [HttpGet]
+        public IActionResult Profile()
+        {
+            UserProfile profiloDiGabriele = new UserProfile("Gabriele", "Simone", 21);
+
+            return View(profiloDiGabriele);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

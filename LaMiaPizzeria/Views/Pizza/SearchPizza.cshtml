@@ -1,0 +1,21 @@
+﻿@using LaMiaPizzeria.Models.ModelForView
+@model ProfileListPizzas
+
+
+@if (Model.ResultPizzas.Count == 0)
+{
+    <h2>Non ho trovato pizze con la ricerca "@Model.SearchString"!</h2>
+}
+else
+{
+    <h2>Ho trovato le seguenti pizze con la ricerca "@Model.SearchString":</h2>
+    <ol>
+        @foreach (PizzaModel pizza in Model.ResultPizzas)
+        {
+            <li>@pizza.Name - @pizza.Description</li>
+        }
+
+    </ol>
+}
+
+<p> Profilo attualmente connesso: @Model.Profile.Name @Model.Profile.Surname, @Model.Profile.Age  </p>
